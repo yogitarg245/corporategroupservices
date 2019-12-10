@@ -17,10 +17,15 @@ import java.util.Date;
 @Component
 public class AppData {
 
+    @NotEmpty
+    @NotNull
     private String firstName;
 
+    @NotEmpty
+    @NotNull
     private String lastName;
 
+    @NotNull
     private Integer corporateGroupId;
 
     @NotEmpty
@@ -28,6 +33,8 @@ public class AppData {
     @EmailValidator
     private String email;
 
+    @NotEmpty
+    @NotNull
     private String password;
 
     private boolean accountLocked;
